@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="log.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    
+    <title>Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+                <nav class="navbar navbar-expand-lg navStyle">
+                    <a class="brand-navbar" href="#">
+                        <img src="images/logodfd.jpg" height="60px" alt="">Elevate Your Adventure Higher</a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#mainMenu">
+                        <span><i class="fas fa-align-right iconStyle"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mainMenu">
+                        <ul class="navbar-nav ml-auto navList">
+                            <li class="nav-item active"><a href="index.html" class="nav-link"><i class="fas fa-home"></i>HOME<span class="sr-only">(current)</span></a></li>
+                            <li class="nav-item">
+                                <a href="district.html" class="nav-link"><i class="fas fa-search"></i>Explore</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="log.html" class="nav-link"><i class="fas fa-user"></i>Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <form action="index.html"  onsubmit="return validate()">
+            <div class="row">
+                <div class="col-md-6 mx-auto p-0">
+                    <div class="card">
+                        <div class="login-box">
+                            <div class="login-snip"> <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Login</label> <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+                                <div class="login-space">
+                                    <div class="login">
+                                        <form name="my form" onsubmit="return validateform();">
+                                        <div class="group"> <label for="user" class="label">Username</label> <input id="user" type="text" class="input" placeholder="Enter your username"> </div>
+                                        <div class="group"> <label for="pass" class="label">Password</label> <input id="pass" type="password" class="input" data-type="password" placeholder="Enter your password"> </div> 
+                                    </form>
+                                        <div class="group"> <input id="check" type="checkbox" class="check" checked> <label for="check"><span class="icon"></span> Keep me Signed in</label> </div>
+                                        <div class="group"> <input type="submit" class="button" value="Sign In"> </div>
+                                        <div class="hr"></div>
+                                        <div class="foot"> <a href="#">Forgot Password?</a> </div>
+                                    </div>
+                               
+                                    <div class="sign-up-form">
+                                        <div class="group"> <label for="user" class="label">Username</label> <input id="user" type="text" class="input" placeholder="Create your Username"> </div>
+                                        <form name="my form" onsubmit="return checkForm(form);">
+                                        <div class="group"> <label for="pass" class="label">Password</label> <input id="pass" type="password" class="input" data-type="password" placeholder="Create your password"> </div>
+                                        <div class="group"> <label for="pass" class="label">Confirm Password</label> <input id="pass" type="password" class="input" data-type="password" placeholder="Confirm password"> </div>
+                                    </form>
+                                    <form name="myform"  method="post" action="#" onsubmit="return validateemail();">
+                                        <div class="group"> <label for="pass" class="label">Email Address</label> <input id="pass" type="text" class="input" placeholder="Enter your email address"> </div>
+                                    </form>
+                                    <form name="myform" onsubmit="return validatePhone(phoneField, format)">
+                                        <div class="group"> <label for="number" class="label">Mobile number</label> <input id="number" type="mobile number" class="input" data-type="mobile number" placeholder="Enter your mobile no"> </div>
+                                    </form>
+                                        <div class="group"> <input type="submit" class="button" value="Sign Up"> </div>
+                                        <div class="hr"></div>
+                                        <div class="foot"> <label for="tab-1">Already Member?</label> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </br>
+    </br>
+                <div class="footer">
+                    <p>@Copyright 2020 EYAH Online Private Limited,India</p>
+                  </div>
+            <script src="log.js"></script>
+            <script src="email.js"></script>
+            <script src="pw.js"></script>
+            <script src="mob.js"></script>
+            </body>
+                </html>
